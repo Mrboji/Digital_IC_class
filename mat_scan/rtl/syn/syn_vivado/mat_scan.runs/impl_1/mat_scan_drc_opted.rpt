@@ -1,0 +1,104 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Dec 16 16:22:20 2024
+| Host         : DESKTOP-37A9H0N running 64-bit major release  (build 9200)
+| Command      : report_drc -file mat_scan_drc_opted.rpt -pb mat_scan_drc_opted.pb -rpx mat_scan_drc_opted.rpx
+| Design       : mat_scan
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 13
++--------+------------------+----------------------------+------------+
+| Rule   | Severity         | Description                | Violations |
++--------+------------------+----------------------------+------------+
+| NSTD-1 | Critical Warning | Unspecified I/O Standard   | 1          |
+| UCIO-1 | Critical Warning | Unconstrained Logical Port | 1          |
+| IOSR-1 | Warning          | IOB set reset sharing      | 10         |
+| ZPS7-1 | Warning          | PS7 block required         | 1          |
++--------+------------------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Critical Warning
+Unspecified I/O Standard  
+24 out of 24 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: din[9:0], dout[9:0], clk, rst_n, vld_in, vld_out.
+Related violations: <none>
+
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+24 out of 24 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: din[9:0], dout[9:0], clk, rst_n, vld_in, vld_out.
+Related violations: <none>
+
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO din[0] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#2 Warning
+IOB set reset sharing  
+IO din[1] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#3 Warning
+IOB set reset sharing  
+IO din[2] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#4 Warning
+IOB set reset sharing  
+IO din[3] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#5 Warning
+IOB set reset sharing  
+IO din[4] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#6 Warning
+IOB set reset sharing  
+IO din[5] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#7 Warning
+IOB set reset sharing  
+IO din[6] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#8 Warning
+IOB set reset sharing  
+IO din[7] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#9 Warning
+IOB set reset sharing  
+IO din[8] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+IOSR-1#10 Warning
+IOB set reset sharing  
+IO din[9] connects to flops which have these x_sram/mem[43][2]_i_1_n_0, x_sram/mem[40][4]_i_1_n_0, x_sram/mem[62][5]_i_1_n_0, x_sram/rst_n_0, x_sram/mem[63][9]_i_2_n_0, x_sram/rst_n_1 set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

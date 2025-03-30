@@ -1,0 +1,87 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Mr.LJS@DESKTOP-37A9H0N.
+# 
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# 
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/ldo_find.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 15:01:47 on Nov 05,2024
+# vlog -reportprogress 300 ../../src/ldo_find.v 
+# -- Compiling module ldo_find
+# 
+# Top level modules:
+# 	ldo_find
+# End time: 15:01:47 on Nov 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/tb_ldo_find.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 15:01:47 on Nov 05,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_ldo_find.v 
+# -- Compiling module tb_ldo_find
+# 
+# Top level modules:
+# 	tb_ldo_find
+# End time: 15:01:47 on Nov 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1730790107
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_ldo_find
+# vsim -do "./test.tcl" 
+# Start time: 15:01:47 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.tb_ldo_find(fast)
+# Loading work.ldo_find(fast)
+# 
+# do wave.do
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././test.tcl line 18
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position insertpoint sim:/tb_ldo_find/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Mr.LJS  Hostname: DESKTOP-37A9H0N  ProcessID: 3392
+# 
+#           Attempting to use alternate WLF file "./wlftxnhjbx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftxnhjbx
+# 
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# 
+# Loading work.tb_ldo_find(fast)
+# Loading work.ldo_find(fast)
+run -all
+# End time: 15:03:00 on Nov 05,2024, Elapsed time: 0:01:13
+# Errors: 3, Warnings: 2

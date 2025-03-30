@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/A_my_project/FPGA/Digital_IC_class/mul_tc_16_16/rtl/sim/sim_modelsim
+T_opt
+Z1 !s110 1732515360
+VABAn2WEB7^7b5D]NAfM^;2
+04 15 4 work tb_mul_tc_16_16 fast 0
+=1-902e1620d136-67441620-253-e2c
+o-quiet -auto_acc_if_foreign -work work -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vbooth_enc
+R1
+!i10b 1
+!s100 YdBY`oBzijS<zoXe<6QaA1
+I`00;lz1BbRNa2Cf2R@ll]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1701567746
+Z4 8../../src/partial_prod_gen.v
+Z5 F../../src/partial_prod_gen.v
+L0 41
+Z6 OL;L;10.4;61
+r1
+!s85 0
+31
+Z7 !s108 1732515360.172000
+Z8 !s107 ../../src/partial_prod_gen.v|
+Z9 !s90 -reportprogress|300|../../src/partial_prod_gen.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vcsa
+R1
+!i10b 1
+!s100 l7HiNnLHNgBngTiOjfI<P1
+I^G^ED26PhIJQANNeOO;Qm3
+R2
+R0
+Z11 w1701571786
+Z12 8../../src/wallace_tree.v
+Z13 F../../src/wallace_tree.v
+L0 36
+R6
+r1
+!s85 0
+31
+Z14 !s108 1732515360.260000
+Z15 !s107 ../../src/wallace_tree.v|
+Z16 !s90 -reportprogress|300|../../src/wallace_tree.v|
+!i113 0
+R10
+vgen_prod
+R1
+!i10b 1
+!s100 0BA4=De_i1B_eEZNOE@Hd0
+IIgC2@ORYYW@ZA1CXSV9nJ1
+R2
+R0
+R3
+R4
+R5
+L0 57
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vmul_tc_16_16
+R1
+!i10b 1
+!s100 jLbgY@dH<G1UjbNQ[0dol1
+Id8b0MciZEFC]:MWOTo:fm3
+R2
+R0
+w1701571926
+8../../src/mul_tc_16_16.v
+F../../src/mul_tc_16_16.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1732515360.076000
+!s107 ../../src/mul_tc_16_16.v|
+!s90 -reportprogress|300|../../src/mul_tc_16_16.v|
+!i113 0
+R10
+vpartial_prod_gen
+R1
+!i10b 1
+!s100 09KcBHPeTWE7Y5i^59X331
+IlCe_X8a=WcVm8B]9JXOec0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+vtb_mul_tc_16_16
+R1
+!i10b 1
+!s100 gCSDX>GEbdUXzzLmham`80
+I;Ke9bA85G4WYnTe2C5Dg_2
+R2
+R0
+w1732515338
+8../../sim/tb_src/tb_mul_tc_16_16.v
+F../../sim/tb_src/tb_mul_tc_16_16.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1732515360.363000
+!s107 ../../sim/tb_src/tb_mul_tc_16_16.v|
+!s90 -reportprogress|300|../../sim/tb_src/tb_mul_tc_16_16.v|
+!i113 0
+R10
+vwallace_tree
+R1
+!i10b 1
+!s100 Y<BmU68=LEMEK^b;<CNz`0
+IQbX:`1?_o`WbeK<]kdhI>2
+R2
+R0
+R11
+R12
+R13
+L0 1
+R6
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R10

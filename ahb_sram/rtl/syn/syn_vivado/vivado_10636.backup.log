@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 15 21:46:57 2024
+# Process ID: 10636
+# Current directory: D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado
+# Command line: vivado.exe -mode gui -source script/create_prj.tcl
+# Log file: D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/vivado.log
+# Journal file: D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source script/create_prj.tcl
+# set DESIGN_TOP ahb_sram
+# set XDC_FILE ./script/top.xdc
+# create_project ahb_sram -part xc7z020clg400-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:15 . Memory (MB): peak = 755.570 ; gain = 116.145
+# read_xdc $XDC_FILE
+# set_param general.maxThreads 16
+# source ./script/read_src.tcl
+## add_files ../../src/ahb_slave_if.v
+## add_files ../../src/ahb_sram_top.v
+## add_files ../../src/sram.v
+# set_property top $DESIGN_TOP [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: ahb_sram_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 857.441 ; gain = 55.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ahb_sram_top' [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_sram_top.v:1]
+	Parameter ADDR_DEPTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ahb_slave_if' [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_slave_if.v:1]
+	Parameter ADDR_DEPTH bound to: 10 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter BUSY bound to: 2'b01 
+	Parameter NONSEQ bound to: 2'b10 
+	Parameter SEQ bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_slave_if.v:88]
+WARNING: [Synth 8-6014] Unused sequential element hburst_r_reg was removed.  [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_slave_if.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_slave_if' (1#1) [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_slave_if.v:1]
+WARNING: [Synth 8-689] width (12) of port connection 'sram_addr' does not match port width (10) of module 'ahb_slave_if' [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_sram_top.v:56]
+INFO: [Synth 8-6157] synthesizing module 'sram' [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/sram.v:1]
+	Parameter ADDR_DEPTH bound to: 12 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DATA_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram' (2#1) [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/sram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ahb_sram_top' (3#1) [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/src/ahb_sram_top.v:1]
+WARNING: [Synth 8-3331] design ahb_slave_if has unconnected port hburst[2]
+WARNING: [Synth 8-3331] design ahb_slave_if has unconnected port hburst[1]
+WARNING: [Synth 8-3331] design ahb_slave_if has unconnected port hburst[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 1176.711 ; gain = 374.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 1176.711 ; gain = 374.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 1176.711 ; gain = 374.992
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'rst_n'. [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_ports rst_n]'. [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/ahb_sram/rtl/syn/syn_vivado/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1861.207 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:52 ; elapsed = 00:01:15 . Memory (MB): peak = 1861.207 ; gain = 1059.488
+12 Infos, 7 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:16 . Memory (MB): peak = 1861.207 ; gain = 1059.488
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 21:49:38 2024...

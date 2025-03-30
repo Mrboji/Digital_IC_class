@@ -1,0 +1,171 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 17516
+License: Customer
+
+Current time: 	Sat Feb 22 03:43:17 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 93 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado2018/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado2018/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Mr.LJS
+User home directory: C:/Users/Mr.LJS
+User working directory: F:/A_my_project/FPGA/Digital_IC_class/fft_multimode/rtl/syn/syn_vivado
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado2018/Vivado
+HDI_APPROOT: D:/Vivado2018/Vivado/2018.3
+RDI_DATADIR: D:/Vivado2018/Vivado/2018.3/data
+RDI_BINDIR: D:/Vivado2018/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Mr.LJS/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Mr.LJS/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Mr.LJS/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Vivado2018/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	F:/A_my_project/FPGA/Digital_IC_class/fft_multimode/rtl/syn/syn_vivado/vivado.log
+Vivado journal file location: 	F:/A_my_project/FPGA/Digital_IC_class/fft_multimode/rtl/syn/syn_vivado/vivado.jou
+Engine tmp dir: 	F:/A_my_project/FPGA/Digital_IC_class/fft_multimode/rtl/syn/syn_vivado/.Xil/Vivado-17516-DESKTOP-37A9H0N
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado2018/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Vivado2018/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado2018/Vivado/2018.3
+XILINX_SDK: D:/Vivado2018/SDK/2018.3
+XILINX_VIVADO: D:/Vivado2018/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Vivado2018/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 733 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bx (cp):  Sourcing Tcl script 'script/create_prj.tcl' : addNotify
+// Tcl Message: source script/create_prj.tcl 
+// Tcl Message: # set DESIGN_TOP fft_multimode # set XDC_FILE ./script/top.xdc # create_project ahb_sram -part xc7z020clg400-2 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+62084kb) [00:00:07]
+// [Engine Memory]: 708 MB (+590420kb) [00:00:07]
+// [GUI Memory]: 79 MB (+15137kb) [00:00:07]
+// [GUI Memory]: 94 MB (+11515kb) [00:00:08]
+// [GUI Memory]: 108 MB (+9721kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1964 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 745 MB. GUI used memory: 51 MB. Current time: 2/22/25, 3:43:18 AM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 745 MB (+2143kb) [00:00:09]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Sourcing Tcl script 'script/create_prj.tcl'"); // bx (cp)
+// Tcl Message: create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 763.906 ; gain = 116.395 
+// Tcl Message: # read_xdc $XDC_FILE # set_param general.maxThreads 16 # source ./script/read_src.tcl ## add_files ../../src/butterfly_unit.v ## add_files ../../src/fft.v ## add_files ../../src/fft_multimode.v ## add_files ../../src/in_resort.v ## add_files ../../src/sram_2x16x512bit.v # set_property top $DESIGN_TOP [current_fileset] 
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_im16x256bit_init : xil_defaultlib.rom_wn_im16x256bit]", 4, false); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_im16x256bit_init : xil_defaultlib.rom_wn_im16x256bit]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 767 MB. GUI used memory: 51 MB. Current time: 2/22/25, 3:43:42 AM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_im16x256bit_init : xil_defaultlib.rom_wn_im16x256bit]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), sram_2x16x512bit_init : sram_2x16x512bit (sram_2x16x512bit.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), sram_2x16x512bit_init : sram_2x16x512bit (sram_2x16x512bit.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_re16x256bit_init : xil_defaultlib.rom_wn_re16x256bit]", 3, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // af (al, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_im16x256bit_init : xil_defaultlib.rom_wn_im16x256bit]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), rom_wn_im16x256bit_init : xil_defaultlib.rom_wn_im16x256bit]", 4, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v)]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v), butterfly_unit_init : butterfly_unit (butterfly_unit.v)]", 7); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v), butterfly_unit_init : butterfly_unit (butterfly_unit.v)]", 7); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), fft_init : fft (fft.v)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, top.xdc]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fft_multimode (fft_multimode.v)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fft_multimode (fft_multimode.v)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_multimode (fft_multimode.v), sram_2x16x512bit_init : sram_2x16x512bit (sram_2x16x512bit.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("fft_multimode.v", 181, 126); // cl (w, cp)

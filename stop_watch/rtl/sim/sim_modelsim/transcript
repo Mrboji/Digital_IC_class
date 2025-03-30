@@ -1,0 +1,77 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/cnt.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:14:32 on Nov 24,2024
+# vlog -reportprogress 300 ../../src/cnt.v 
+# -- Compiling module cnt
+# 
+# Top level modules:
+# 	cnt
+# End time: 22:14:32 on Nov 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/tb_cnt.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:14:32 on Nov 24,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_cnt.v 
+# -- Compiling module tb_cnt
+# 
+# Top level modules:
+# 	tb_cnt
+# End time: 22:14:32 on Nov 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1732457672
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc"  tb_cnt
+# vsim -do "./test.tcl" 
+# Start time: 22:14:32 on Nov 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.tb_cnt(fast)
+# Loading work.cnt(fast)
+# 
+# do wave.do
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././test.tcl line 17
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position insertpoint sim:/tb_cnt/u_cnt/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.tb_cnt(fast)
+# Loading work.cnt(fast)
+run -all
+# ** Note: $finish    : ../../sim/tb_src/tb_cnt.v(52)
+#    Time: 230 ns  Iteration: 0  Instance: /tb_cnt
+# 1
+# Break in Module tb_cnt at ../../sim/tb_src/tb_cnt.v line 52
+# End time: 22:18:05 on Nov 24,2024, Elapsed time: 0:03:33
+# Errors: 3, Warnings: 0

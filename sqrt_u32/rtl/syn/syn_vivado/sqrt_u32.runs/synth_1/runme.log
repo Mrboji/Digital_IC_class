@@ -1,0 +1,614 @@
+
+*** Running vivado
+    with args -log sqrt_u32.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sqrt_u32.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source sqrt_u32.tcl -notrace
+Command: synth_design -top sqrt_u32 -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17600 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 386.309 ; gain = 100.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sqrt_u32' [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter Q_WIDTH bound to: 16 - type: integer 
+	Parameter R_WIDTH bound to: 17 - type: integer 
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:63]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt_u32' (1#1) [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 442.492 ; gain = 156.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 442.492 ; gain = 156.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 442.492 ; gain = 156.375
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/script/top.xdc]
+Finished Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/script/top.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 807.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 807.461 ; gain = 0.043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 807.461 ; gain = 521.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 807.461 ; gain = 521.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 807.461 ; gain = 521.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 807.461 ; gain = 521.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	               16 Bit    Registers := 33    
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sqrt_u32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+	               16 Bit    Registers := 33    
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input     16 Bit        Muxes := 62    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+DSP Report: Generating DSP data_o2, operation Mode is: A*B.
+DSP Report: operator data_o2 is absorbed into DSP data_o2.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_z_reg[16][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Q_q_reg[16][15] )
+INFO: [Synth 8-3886] merging instance 'Q_z_reg[16][15]' (FDC) to 'valid_flag_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[15].Q_z_reg[15][13] )
+INFO: [Synth 8-3886] merging instance 'genblk1[15].Q_z_reg[15][14]' (FDC) to 'genblk1[15].valid_flag_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[14].Q_z_reg[14][12] )
+INFO: [Synth 8-3886] merging instance 'genblk1[14].Q_z_reg[14][13]' (FDC) to 'genblk1[14].valid_flag_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[13].Q_z_reg[13][11] )
+INFO: [Synth 8-3886] merging instance 'genblk1[13].Q_z_reg[13][12]' (FDC) to 'genblk1[13].valid_flag_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[12].Q_z_reg[12][10] )
+INFO: [Synth 8-3886] merging instance 'genblk1[12].Q_z_reg[12][11]' (FDC) to 'genblk1[12].valid_flag_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[11].Q_z_reg[11][9] )
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_z_reg[11][10]' (FDC) to 'genblk1[11].valid_flag_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\genblk1[10].Q_z_reg[10][8] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_z_reg[10][9]' (FDC) to 'genblk1[10].valid_flag_reg[10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_z_reg[9][8]' (FDC) to 'genblk1[9].valid_flag_reg[9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_z_reg[8][7]' (FDC) to 'genblk1[8].valid_flag_reg[8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_z_reg[7][6]' (FDC) to 'genblk1[7].valid_flag_reg[7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_z_reg[6][5]' (FDC) to 'genblk1[6].valid_flag_reg[6]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_z_reg[5][4]' (FDC) to 'genblk1[5].valid_flag_reg[5]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_z_reg[4][3]' (FDC) to 'genblk1[4].valid_flag_reg[4]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_z_reg[3][2]' (FDC) to 'genblk1[3].valid_flag_reg[3]'
+INFO: [Synth 8-3886] merging instance 'genblk1[2].Q_z_reg[2][1]' (FDC) to 'genblk1[2].valid_flag_reg[2]'
+INFO: [Synth 8-3886] merging instance 'genblk1[1].Q_z_reg[1][0]' (FDC) to 'genblk1[1].valid_flag_reg[1]'
+INFO: [Synth 8-3886] merging instance 'genblk1[15].Q_q_reg[15][15]' (FDC) to 'genblk1[15].Q_z_reg[15][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[14].Q_q_reg[14][14]' (FDC) to 'genblk1[14].Q_z_reg[14][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[14].Q_q_reg[14][15]' (FDC) to 'genblk1[14].Q_z_reg[14][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].Q_q_reg[13][13]' (FDC) to 'genblk1[13].Q_z_reg[13][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].Q_q_reg[13][14]' (FDC) to 'genblk1[13].Q_z_reg[13][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[13].Q_q_reg[13][15]' (FDC) to 'genblk1[13].Q_z_reg[13][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].Q_q_reg[12][12]' (FDC) to 'genblk1[12].Q_z_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].Q_q_reg[12][13]' (FDC) to 'genblk1[12].Q_z_reg[12][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].Q_q_reg[12][14]' (FDC) to 'genblk1[12].Q_z_reg[12][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[12].Q_q_reg[12][15]' (FDC) to 'genblk1[12].Q_z_reg[12][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_q_reg[11][11]' (FDC) to 'genblk1[11].Q_z_reg[11][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_q_reg[11][12]' (FDC) to 'genblk1[11].Q_z_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_q_reg[11][13]' (FDC) to 'genblk1[11].Q_z_reg[11][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_q_reg[11][14]' (FDC) to 'genblk1[11].Q_z_reg[11][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[11].Q_q_reg[11][15]' (FDC) to 'genblk1[11].Q_z_reg[11][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][10]' (FDC) to 'genblk1[10].Q_z_reg[10][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][11]' (FDC) to 'genblk1[10].Q_z_reg[10][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][12]' (FDC) to 'genblk1[10].Q_z_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][13]' (FDC) to 'genblk1[10].Q_z_reg[10][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][14]' (FDC) to 'genblk1[10].Q_z_reg[10][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[10].Q_q_reg[10][15]' (FDC) to 'genblk1[10].Q_z_reg[10][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][9]' (FDC) to 'genblk1[9].Q_z_reg[9][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][10]' (FDC) to 'genblk1[9].Q_z_reg[9][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][11]' (FDC) to 'genblk1[9].Q_z_reg[9][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][12]' (FDC) to 'genblk1[9].Q_z_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][13]' (FDC) to 'genblk1[9].Q_z_reg[9][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][14]' (FDC) to 'genblk1[9].Q_z_reg[9][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[9].Q_q_reg[9][15]' (FDC) to 'genblk1[9].Q_z_reg[9][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][8]' (FDC) to 'genblk1[8].Q_z_reg[8][8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][9]' (FDC) to 'genblk1[8].Q_z_reg[8][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][10]' (FDC) to 'genblk1[8].Q_z_reg[8][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][11]' (FDC) to 'genblk1[8].Q_z_reg[8][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][12]' (FDC) to 'genblk1[8].Q_z_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][13]' (FDC) to 'genblk1[8].Q_z_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][14]' (FDC) to 'genblk1[8].Q_z_reg[8][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[8].Q_q_reg[8][15]' (FDC) to 'genblk1[8].Q_z_reg[8][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][7]' (FDC) to 'genblk1[7].Q_z_reg[7][7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][8]' (FDC) to 'genblk1[7].Q_z_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][9]' (FDC) to 'genblk1[7].Q_z_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][10]' (FDC) to 'genblk1[7].Q_z_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][11]' (FDC) to 'genblk1[7].Q_z_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][12]' (FDC) to 'genblk1[7].Q_z_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][13]' (FDC) to 'genblk1[7].Q_z_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][14]' (FDC) to 'genblk1[7].Q_z_reg[7][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[7].Q_q_reg[7][15]' (FDC) to 'genblk1[7].Q_z_reg[7][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][6]' (FDC) to 'genblk1[6].Q_z_reg[6][6]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][7]' (FDC) to 'genblk1[6].Q_z_reg[6][7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][8]' (FDC) to 'genblk1[6].Q_z_reg[6][8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][9]' (FDC) to 'genblk1[6].Q_z_reg[6][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][10]' (FDC) to 'genblk1[6].Q_z_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][11]' (FDC) to 'genblk1[6].Q_z_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][12]' (FDC) to 'genblk1[6].Q_z_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][13]' (FDC) to 'genblk1[6].Q_z_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][14]' (FDC) to 'genblk1[6].Q_z_reg[6][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[6].Q_q_reg[6][15]' (FDC) to 'genblk1[6].Q_z_reg[6][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][5]' (FDC) to 'genblk1[5].Q_z_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][6]' (FDC) to 'genblk1[5].Q_z_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][7]' (FDC) to 'genblk1[5].Q_z_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][8]' (FDC) to 'genblk1[5].Q_z_reg[5][8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][9]' (FDC) to 'genblk1[5].Q_z_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][10]' (FDC) to 'genblk1[5].Q_z_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][11]' (FDC) to 'genblk1[5].Q_z_reg[5][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][12]' (FDC) to 'genblk1[5].Q_z_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][13]' (FDC) to 'genblk1[5].Q_z_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][14]' (FDC) to 'genblk1[5].Q_z_reg[5][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[5].Q_q_reg[5][15]' (FDC) to 'genblk1[5].Q_z_reg[5][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][4]' (FDC) to 'genblk1[4].Q_z_reg[4][4]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][5]' (FDC) to 'genblk1[4].Q_z_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][6]' (FDC) to 'genblk1[4].Q_z_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][7]' (FDC) to 'genblk1[4].Q_z_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][8]' (FDC) to 'genblk1[4].Q_z_reg[4][8]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][9]' (FDC) to 'genblk1[4].Q_z_reg[4][9]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][10]' (FDC) to 'genblk1[4].Q_z_reg[4][10]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][11]' (FDC) to 'genblk1[4].Q_z_reg[4][11]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][12]' (FDC) to 'genblk1[4].Q_z_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][13]' (FDC) to 'genblk1[4].Q_z_reg[4][13]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][14]' (FDC) to 'genblk1[4].Q_z_reg[4][14]'
+INFO: [Synth 8-3886] merging instance 'genblk1[4].Q_q_reg[4][15]' (FDC) to 'genblk1[4].Q_z_reg[4][15]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][3]' (FDC) to 'genblk1[3].Q_z_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][4]' (FDC) to 'genblk1[3].Q_z_reg[3][4]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][5]' (FDC) to 'genblk1[3].Q_z_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][6]' (FDC) to 'genblk1[3].Q_z_reg[3][6]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][7]' (FDC) to 'genblk1[3].Q_z_reg[3][7]'
+INFO: [Synth 8-3886] merging instance 'genblk1[3].Q_q_reg[3][8]' (FDC) to 'genblk1[3].Q_z_reg[3][8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 807.461 ; gain = 521.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|sqrt_u32    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 845.539 ; gain = 559.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 860.051 ; gain = 573.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:25]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    64|
+|3     |DSP48E1 |    16|
+|4     |LUT1    |     8|
+|5     |LUT2    |   648|
+|6     |LUT4    |   512|
+|7     |FDCE    |   665|
+|8     |IBUF    |    35|
+|9     |OBUF    |    17|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1966|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 864.223 ; gain = 213.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 864.223 ; gain = 578.105
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'sqrt_u32' is not ideal for floorplanning, since the cellview 'sqrt_u32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 864.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+279 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 864.223 ; gain = 591.125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 864.223 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/sqrt_u32.runs/synth_1/sqrt_u32.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sqrt_u32_utilization_synth.rpt -pb sqrt_u32_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 14:12:18 2024...

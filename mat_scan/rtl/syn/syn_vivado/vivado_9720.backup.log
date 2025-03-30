@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 15 21:37:40 2024
+# Process ID: 9720
+# Current directory: D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/syn/syn_vivado
+# Command line: vivado.exe -mode gui -source script/create_prj.tcl
+# Log file: D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/syn/syn_vivado/vivado.log
+# Journal file: D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/syn/syn_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source script/create_prj.tcl
+# set DESIGN_TOP mat_scan
+# set XDC_FILE ./script/top.xdc
+# create_project mat_scan -part xc7z020clg400-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:13 . Memory (MB): peak = 784.500 ; gain = 140.777
+# read_xdc $XDC_FILE
+# set_param general.maxThreads 16
+# source ./script/read_src.tcl
+## add_files ../../src/sram.v
+## add_files ../../src/mat_scan.v
+# set_property top $DESIGN_TOP [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: mat_scan
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 846.422 ; gain = 28.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mat_scan' [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/src/mat_scan.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sram' [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/src/sram.v:1]
+	Parameter ADDR_DEPTH bound to: 6 - type: integer 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sram' (1#1) [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/src/sram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mat_scan' (2#1) [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/src/mat_scan.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 905.398 ; gain = 87.254
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 905.398 ; gain = 87.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 905.398 ; gain = 87.254
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/syn/syn_vivado/script/top.xdc]
+Finished Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/mat_scan/rtl/syn/syn_vivado/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1264.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1333.383 ; gain = 515.238
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1333.383 ; gain = 515.238
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 21:39:17 2024...

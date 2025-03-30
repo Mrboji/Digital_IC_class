@@ -1,0 +1,67 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/seq_detect.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:43:12 on Nov 20,2024
+# vlog -reportprogress 300 ../../src/seq_detect.v 
+# -- Compiling module seq_detect
+# 
+# Top level modules:
+# 	seq_detect
+# End time: 20:43:12 on Nov 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/tb_seq_detect.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 20:43:12 on Nov 20,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_seq_detect.v 
+# -- Compiling module tb_seq_detect
+# 
+# Top level modules:
+# 	tb_seq_detect
+# End time: 20:43:12 on Nov 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1732106592
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_seq_detect
+# vsim -do "./test.tcl" 
+# Start time: 20:43:12 on Nov 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.tb_seq_detect(fast)
+# Loading work.seq_detect(fast)
+# 
+# do wave.do
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././test.tcl line 18
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+# End time: 20:43:18 on Nov 20,2024, Elapsed time: 0:00:06
+# Errors: 3, Warnings: 0

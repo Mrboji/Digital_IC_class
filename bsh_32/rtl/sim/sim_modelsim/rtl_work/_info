@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/A_my_project/FPGA/Digital_IC_class/bsh_32/rtl/sim/sim_modelsim
+T_opt
+!s110 1732517904
+VngYUVU4nzU]kQfIB@Di?X1
+04 9 4 work tb_bsh_32 fast 0
+=1-902e1620d136-67442010-2d-2a4
+o-quiet -auto_acc_if_foreign -work work -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vbsh_32
+Z1 !s110 1732517903
+!i10b 1
+!s100 jcW:<JYMgUoHhGV=UhoY70
+IgL?W1AcCEgOcFSgmXG@i32
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1701504996
+8../../src/bsh_32.v
+F../../src/bsh_32.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1732517903.711000
+!s107 ../../src/bsh_32.v|
+!s90 -reportprogress|300|../../src/bsh_32.v|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_bsh_32
+R1
+!i10b 1
+!s100 KP_^^ehzne<>46ee;10aN1
+IASMaHSaSl<WN29n2MGa6Z2
+R2
+R0
+w1732517843
+8../../sim/tb_src/tb_bsh_32.v
+F../../sim/tb_src/tb_bsh_32.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1732517903.805000
+!s107 ../../sim/tb_src/tb_bsh_32.v|
+!s90 -reportprogress|300|../../sim/tb_src/tb_bsh_32.v|
+!i113 0
+R4

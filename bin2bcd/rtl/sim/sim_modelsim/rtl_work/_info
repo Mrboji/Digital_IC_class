@@ -1,0 +1,87 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/A_my_project/FPGA/Digital_IC_class/leading_one_find/rtl/sim/sim_modelsim
+T_opt
+!s110 1730789866
+VeciBl3W3GE:PRGnV`06ZC1
+04 11 4 work tb_ldo_find fast 0
+=1-902e1620d136-6729c1ea-1fa-d40
+Z1 o-quiet -auto_acc_if_foreign -work work -L rtl_work -L work +acc
+n@_opt
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1730790381
+V=FnilFhaQePIh?WoPaDC91
+04 10 4 work tb_bin2bcd fast 0
+=1-902e1620d136-6729c3ed-cf-1894
+R1
+n@_opt1
+R2
+vbin2bcd
+Z3 !s110 1730790380
+!i10b 1
+!s100 cAKf4UScTGHA7f37l`KMj3
+Ilmgo@m7nMj8Iz`?nUI^^B0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dD:/A_my_project/FPGA/Digital_IC_class/bin2bcd/rtl/sim/sim_modelsim
+Z6 w1729663353
+Z7 8../../src/bin2bcd.v
+Z8 F../../src/bin2bcd.v
+Z9 L0 23
+Z10 OL;L;10.4;61
+r1
+!s85 0
+31
+Z11 !s108 1730790380.849000
+Z12 !s107 ../../src/bin2bcd.v|
+Z13 !s90 -reportprogress|300|../../src/bin2bcd.v|
+!i113 0
+Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vmodifier
+R3
+!i10b 1
+!s100 6nBSOg5N[]Lh77be<KDCT2
+Ikkkj87S2;B:OXS2XcDk]82
+R4
+R5
+R6
+R7
+R8
+L0 52
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+vtb_bin2bcd
+R3
+!i10b 1
+!s100 e^iDP=4Hoo[@PJ4WWd_`53
+InkS?[i=`Ff=MMaWMNJG9A3
+R4
+R5
+w1729663463
+8../../sim/tb_src/tb_bin2bcd.v
+F../../sim/tb_src/tb_bin2bcd.v
+R9
+R10
+r1
+!s85 0
+31
+!s108 1730790380.948000
+!s107 ../../sim/tb_src/tb_bin2bcd.v|
+!s90 -reportprogress|300|../../sim/tb_src/tb_bin2bcd.v|
+!i113 0
+R14

@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec 15 21:17:12 2024
+# Process ID: 4620
+# Current directory: D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado
+# Command line: vivado.exe -mode gui -source script/create_prj.tcl
+# Log file: D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/vivado.log
+# Journal file: D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source script/create_prj.tcl
+# set DESIGN_TOP sqrt_u32
+# set XDC_FILE ./script/top.xdc
+# create_project sqrt_u32 -part xc7z020clg400-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2018/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:57 ; elapsed = 00:00:25 . Memory (MB): peak = 730.289 ; gain = 117.973
+# read_xdc $XDC_FILE
+# set_param general.maxThreads 16
+# source ./script/read_src.tcl
+## add_files ../../src/sqrt_u32.v
+# set_property top $DESIGN_TOP [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: sqrt_u32
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 867.535 ; gain = 70.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sqrt_u32' [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter Q_WIDTH bound to: 16 - type: integer 
+	Parameter R_WIDTH bound to: 17 - type: integer 
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:67]
+WARNING: [Synth 8-693] zero replication count - replication ignored [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'sqrt_u32' (1#1) [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/src/sqrt_u32.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 914.086 ; gain = 117.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 914.086 ; gain = 117.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 914.086 ; gain = 117.211
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/script/top.xdc]
+Finished Parsing XDC File [D:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/syn/syn_vivado/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1275.363 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 1322.121 ; gain = 525.246
+6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:24 . Memory (MB): peak = 1322.121 ; gain = 525.246
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 15 21:19:44 2024...

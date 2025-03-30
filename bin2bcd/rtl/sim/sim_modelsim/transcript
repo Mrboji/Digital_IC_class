@@ -1,0 +1,114 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is Mr.LJS@DESKTOP-37A9H0N.
+# 
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# 
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/bin2bcd.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 15:06:20 on Nov 05,2024
+# vlog -reportprogress 300 ../../src/bin2bcd.v 
+# -- Compiling module bin2bcd
+# -- Compiling module modifier
+# 
+# Top level modules:
+# 	bin2bcd
+# End time: 15:06:20 on Nov 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/tb_bin2bcd.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 15:06:20 on Nov 05,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_bin2bcd.v 
+# -- Compiling module tb_bin2bcd
+# 
+# Top level modules:
+# 	tb_bin2bcd
+# End time: 15:06:20 on Nov 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1730790380
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_bin2bcd
+# vsim -do "./test.tcl" 
+# Start time: 15:06:21 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.tb_bin2bcd(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.modifier(fast)
+# 
+# do wave.do
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././test.tcl line 18
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position insertpoint sim:/tb_bin2bcd/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Mr.LJS  Hostname: DESKTOP-37A9H0N  ProcessID: 3392
+# 
+#           Attempting to use alternate WLF file "./wlftbhvns6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftbhvns6
+# 
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# 
+# Loading work.tb_bin2bcd(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.modifier(fast)
+run -all
+# input(decimal):  36, output(hex): 036
+# input(decimal): 129, output(hex): 129
+# input(decimal):   9, output(hex): 009
+# input(decimal):  99, output(hex): 099
+# input(decimal):  13, output(hex): 013
+# input(decimal): 141, output(hex): 141
+# input(decimal): 101, output(hex): 101
+# input(decimal):  18, output(hex): 018
+# input(decimal):   1, output(hex): 001
+# input(decimal):  13, output(hex): 013
+# input(decimal): 118, output(hex): 118
+# input(decimal):  61, output(hex): 061
+# input(decimal): 237, output(hex): 237
+# input(decimal): 140, output(hex): 140
+# input(decimal): 249, output(hex): 249
+# input(decimal): 198, output(hex): 198
+# input(decimal): 197, output(hex): 197
+# input(decimal): 170, output(hex): 170
+# input(decimal): 229, output(hex): 229
+# input(decimal): 119, output(hex): 119
+# ** Note: $finish    : ../../sim/tb_src/tb_bin2bcd.v(45)
+#    Time: 220 ns  Iteration: 0  Instance: /tb_bin2bcd
+# 1
+# Break in Module tb_bin2bcd at ../../sim/tb_src/tb_bin2bcd.v line 45
+# End time: 15:08:15 on Nov 05,2024, Elapsed time: 0:01:54
+# Errors: 3, Warnings: 2

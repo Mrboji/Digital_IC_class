@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/A_my_project/FPGA/Digital_IC_class/sqrt_u32/rtl/sim/sim_modelsim
+T_opt
+!s110 1734329336
+VhTk_kKFR<?m;`GSA==T7]0
+04 11 4 work tb_sqrt_u32 fast 0
+=1-902e1620d136-675fc3f8-be-2954
+o-quiet -auto_acc_if_foreign -work work -L rtl_work -L work +acc
+n@_opt
+OL;O;10.4;61
+vsqrt_u32
+Z1 !s110 1734329334
+!i10b 1
+!s100 K6dJdnoR]R7DI5UU3VnzT0
+I7f662hd<C0eadYH:ZZ_2l1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1734327894
+8../../src/sqrt_u32.v
+F../../src/sqrt_u32.v
+L0 1
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1734329334.664000
+!s107 ../../src/sqrt_u32.v|
+!s90 -reportprogress|300|../../src/sqrt_u32.v|
+!i113 0
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vtb_sqrt_u32
+R1
+!i10b 1
+!s100 KX;j[3fXCZmkI@X^=<za]3
+IK`Bb0>CFoI7SfV4ZdS^9B3
+R2
+R0
+w1734329321
+8../../sim/tb_src/tb_sqrt_u32.v
+F../../sim/tb_src/tb_sqrt_u32.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1734329334.759000
+!s107 ../../sim/tb_src/tb_sqrt_u32.v|
+!s90 -reportprogress|300|../../sim/tb_src/tb_sqrt_u32.v|
+!i113 0
+R4

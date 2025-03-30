@@ -1,0 +1,136 @@
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.4 Lib Mapping Utility 2014.12 Dec  3 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/mul_tc_16_16.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:16:00 on Nov 25,2024
+# vlog -reportprogress 300 ../../src/mul_tc_16_16.v 
+# -- Compiling module mul_tc_16_16
+# 
+# Top level modules:
+# 	mul_tc_16_16
+# End time: 14:16:00 on Nov 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../src/partial_prod_gen.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:16:00 on Nov 25,2024
+# vlog -reportprogress 300 ../../src/partial_prod_gen.v 
+# -- Compiling module partial_prod_gen
+# -- Compiling module booth_enc
+# -- Compiling module gen_prod
+# 
+# Top level modules:
+# 	partial_prod_gen
+# End time: 14:16:00 on Nov 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../src/wallace_tree.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:16:00 on Nov 25,2024
+# vlog -reportprogress 300 ../../src/wallace_tree.v 
+# -- Compiling module wallace_tree
+# -- Compiling module csa
+# 
+# Top level modules:
+# 	wallace_tree
+# End time: 14:16:00 on Nov 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/tb_mul_tc_16_16.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:16:00 on Nov 25,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_mul_tc_16_16.v 
+# -- Compiling module tb_mul_tc_16_16
+# 
+# Top level modules:
+# 	tb_mul_tc_16_16
+# End time: 14:16:00 on Nov 25,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1732515360
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc"  tb_mul_tc_16_16
+# vsim -do "./test.tcl" 
+# Start time: 14:16:00 on Nov 25,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.tb_mul_tc_16_16(fast)
+# Loading work.mul_tc_16_16(fast)
+# Loading work.partial_prod_gen(fast)
+# Loading work.booth_enc(fast)
+# Loading work.gen_prod(fast)
+# Loading work.wallace_tree(fast)
+# Loading work.csa(fast)
+# ** Warning: (vsim-PLI-3003) ../../sim/tb_src/tb_mul_tc_16_16.v(21): [TOFD] - System task or function '$srandom' is not defined.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul_tc_16_16 File: ../../sim/tb_src/tb_mul_tc_16_16.v
+# 
+# do wave.do
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ././test.tcl line 19
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position insertpoint sim:/tb_mul_tc_16_16/u_uml_tc_16_16/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.tb_mul_tc_16_16(fast)
+# Loading work.mul_tc_16_16(fast)
+# Loading work.partial_prod_gen(fast)
+# Loading work.booth_enc(fast)
+# Loading work.gen_prod(fast)
+# Loading work.wallace_tree(fast)
+# Loading work.csa(fast)
+# ** Warning: (vsim-PLI-3003) ../../sim/tb_src/tb_mul_tc_16_16.v(21): [TOFD] - System task or function '$srandom' is not defined.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul_tc_16_16 File: ../../sim/tb_src/tb_mul_tc_16_16.v
+run -all
+# ** Error (suppressible): (vsim-12023) ../../sim/tb_src/tb_mul_tc_16_16.v(21): Cannot execute undefined system task/function '$srandom'
+# 
+# input A =  13604, B =  24193, product =    329121572, expect   329121572
+# input A = -10743, B =  22115, product =   -237581445, expect  -237581445
+# input A =  31501, B = -26227, product =   -826176727, expect  -826176727
+# input A = -31643, B =  21010, product =   -664819430, expect  -664819430
+# input A =  -7423, B = -13043, product =     96818189, expect    96818189
+# input A =  -3722, B = -12995, product =     48367390, expect    48367390
+# input A =  22509, B =  -2164, product =    -48709476, expect   -48709476
+# input A =  -5639, B =   9414, product =    -53085546, expect   -53085546
+# input A = -31547, B = -11606, product =    366134482, expect   366134482
+# input A =  -2075, B =  29303, product =    -60803725, expect   -60803725
+# input A = -10734, B =  -9329, product =    100137486, expect   100137486
+# input A =  27122, B = -26930, product =   -730395460, expect  -730395460
+# input A =  31464, B =  20165, product =    634471560, expect   634471560
+# input A =  18780, B =  10429, product =    195856620, expect   195856620
+# input A =  22573, B =   9829, product =    221870017, expect   221870017
+# input A =  25187, B = -30966, product =   -779940642, expect  -779940642
+# input A =   8832, B =   8480, product =     74895360, expect    74895360
+# input A =  17834, B = -13155, product =   -234606270, expect  -234606270
+# input A =  16022, B = -18413, product =   -295013086, expect  -295013086
+# input A =  14349, B = -10669, product =   -153089481, expect  -153089481
+# ** Note: $finish    : ../../sim/tb_src/tb_mul_tc_16_16.v(27)
+#    Time: 230 ns  Iteration: 0  Instance: /tb_mul_tc_16_16
+# 1
+# Break in Module tb_mul_tc_16_16 at ../../sim/tb_src/tb_mul_tc_16_16.v line 27
+# End time: 14:19:48 on Nov 25,2024, Elapsed time: 0:03:48
+# Errors: 4, Warnings: 2
